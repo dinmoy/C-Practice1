@@ -10,6 +10,18 @@ namespace C_Practice1
     {
         static void Main(string[] args)
         {
+            //컨텍스트 키워드
+            var abc = "Hello World"; //OK
+
+            //한줄 ㅜ석
+            /*
+             * 
+             * 
+             * 여러줄 주석
+             *             */
+            /***XML주석 ***/
+
+            
         }
     }
 }
