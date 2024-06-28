@@ -67,8 +67,14 @@ namespace C_Practice1
             //#1 12-4 변수
             // 변수(Variable)
             string name = "문자열 자료형";
-            
 
+            //#1 12-5 복합대입연산자
+            // += -= * = /= %=
+            string output = "Hello";
+            output += "World";
+            Console.WriteLine(output);
+
+       
 
         }
     }
