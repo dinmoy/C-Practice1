@@ -125,6 +125,9 @@ namespace C_Practice1
                     break;
             }
 
+            //#2 13-6 삼항 연산자
+            Console.WriteLine(number % 2 == 0 ? "짝수" : "홀수");
+
         }
     }
 }
