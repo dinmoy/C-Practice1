@@ -64,6 +64,10 @@ namespace C_Practice1
             Console.WriteLine(true && false); //false
             Console.WriteLine(true || false); //true
 
+            //#1 12-4 변수
+            // 변수(Variable)
+            string name = "문자열 자료형";
+            
 
 
         }
