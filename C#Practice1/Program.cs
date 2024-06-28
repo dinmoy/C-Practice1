@@ -85,7 +85,10 @@ namespace C_Practice1
             //컴파일 시점에서 바뀜 지역변수에서만 사용 가능
             var varnumber = 20;
             //var abc; // x. 반드시 초기화 해줘야 함
-            
+
+            //#1 12-9 입력
+            string input = Console.ReadLine();
+            Console.WriteLine(input);
 
 
         }
