@@ -109,6 +109,22 @@ namespace C_Practice1
                 //other
             }
 
+            //#2 13-2 switch 조건문
+            int v = 0;
+            switch (v)
+            {
+                //case뒤에는 꼭 상수여야함 변수는 X
+                case 0:
+                    //0
+                    break;
+                case 1:
+                    //1
+                    break;
+                default:
+                    //other
+                    break;
+            }
+
         }
     }
 }
