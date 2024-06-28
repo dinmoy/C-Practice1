@@ -90,6 +90,10 @@ namespace C_Practice1
             string input = Console.ReadLine();
             Console.WriteLine(input);
 
+            //#1 12-10 자료형변환(*)
+            //굉장히 중요
+
+
 
         }
     }
