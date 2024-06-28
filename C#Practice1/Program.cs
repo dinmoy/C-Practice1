@@ -81,6 +81,13 @@ namespace C_Practice1
             Console.WriteLine(number--); //12
             Console.WriteLine(--number); //10
 
+            //#1 12-8 var 키워드
+            //컴파일 시점에서 바뀜 지역변수에서만 사용 가능
+            var varnumber = 20;
+            //var abc; // x. 반드시 초기화 해줘야 함
+            
+
+
         }
     }
 }
