@@ -2,10 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace C_Practice1
 {
+    class Test
+    {
+        public int value = 10;
+    }
+    static void Change(Test t)
+    {
+        t.value = 20;
+    }
     class box
     {
         public int width { get; set; }
@@ -273,7 +282,13 @@ namespace C_Practice1
             box b = new box();
             b.width = 100;
             b.Height = 100;
-            //b.Height = -100; //예외 발생
+            //b.Height = -100; //예외 발생\
+
+            //#5 22-9. 값 복사와 참조 복사
+            Test test = new Test();
+            test.value = 100;
+            Change(test);
+            Console.WriteLine(test.value); // 20
         }
     }
 }
