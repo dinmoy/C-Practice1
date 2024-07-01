@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace C_Practice1
 {
+    class MyMath
+    {
+        public static int classVar = 1;
+        public int instanceVar = 2;
+
+        public static int Abs(int input)
+        {
+            //클래스 메서드에서 인스턴스 변수 접근 불가
+            Console.WriteLine(classVar);
+            //Console.WriteLine(instanceVar); 
+            return (input >= 0) ? input : -input;
+        }
+    }
     class FirstClass
     {
 
@@ -186,6 +199,12 @@ namespace C_Practice1
 
             Product p2 = new Product() { price=100000, name="아이폰"};
             Product p3 = new Product() { price = 1000000 };
+
+            //#4 21-5. 클래스 변수
+            Console.WriteLine(Product.TAX_RATIO);
+            //Console.WriteLine(p1.TAX_RATIO); // Java는 가능 하나 C#은 X
+
+            //#5 22-3. 클래스 메서드
 
         }
     }
