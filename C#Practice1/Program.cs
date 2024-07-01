@@ -6,6 +6,29 @@ using System.Threading.Tasks;
 
 namespace C_Practice1
 {
+    class box
+    {
+        public int width { get; set; }
+        private int height;
+
+        public int Height
+        {
+            get { return height; }
+            set
+            {
+                if(value>0)
+                {
+                    height= value;
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+        }
+
+    }
+
     class Sample
     {
         public static int value;
@@ -245,6 +268,12 @@ namespace C_Practice1
 
             //#5 22-7. 소멸자
             //소멸자는 프로그램당 1개만 존재할 수 있음
+
+            //#5 22-8. 속성(Property)
+            box b = new box();
+            b.width = 100;
+            b.Height = 100;
+            //b.Height = -100; //예외 발생
         }
     }
 }
