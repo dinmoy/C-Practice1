@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSPractice1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -289,6 +290,26 @@ namespace C_Practice1
             test.value = 100;
             Change(test);
             Console.WriteLine(test.value); // 20
+
+            //#6 23-4. is 키워드(+ as 키워드)
+            List<Animal> animals = new List<Animal>()
+            {
+                new Dog(), new Cat(), new Dog(), new Cat(), new Cat(),
+            };
+            foreach (var item in animals)
+            {
+                item.Eat();
+                item.Sleep();
+                if (item is Dog)
+                {
+                    ((Dog)item).Bark();
+                }
+                else if (item is Cat)
+                {
+                    var cat = item as Cat;
+                    if (cat != null) cat.Meow();
+                }
+            }
         }
     }
 }
